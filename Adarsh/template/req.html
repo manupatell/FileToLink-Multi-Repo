@@ -1,4 +1,4 @@
-<!-- © MrNamee -->
+<!-- © LazyDeveloper -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -181,27 +181,37 @@
 
         function vlc_player() {
             const openLazyLink = lazyLink;
-            const openVlc = `vlc://${openLazyLink}`;
+            const openVlc = `vlc://${openLazyLink}#Intent;package=org.videolan.vlc;end`;
             window.location.href = openVlc;
         }
 	    
-		function mx_player() {
+	function mx_player() {
             const openLazyLink = lazyLink;
             const openMx = `intent:${openLazyLink}#Intent;package=com.mxtech.videoplayer.ad;end`;
-            const openMx = `intent:${openLazyLink}#Intent;package=com.mxtech.videoplayer.television;end`;
-            const openMx = `intent:${openLazyLink}#Intent;package=com.mxtech.videoplayer.pro;end`;
             window.location.href = openMx;
         }
-        
-	function playit_player() {
+        	    
+        function mx_player() {
+                const openLazyLink = lazyLink;
+                const openMx = `intent:${openLazyLink}#Intent;package=com.mxtech.videoplayer.television;end`;
+                window.location.href = openMx;
+        }
+
+        function mx_player() {
+            const openLazyLink = lazyLink;
+            const openMx = `intent:${openLazyLink}#Intent;package=com.mxtech.videoplayer.television;end`;
+            window.location.href = openMx;
+        }
+
+    function playit_player() {
     	const openLazyLink = lazyLink;
-    	const openPlayit = `playit://playerv2/video?url=${openLazyLink}`;
-   	 window.location.href = openPlayit;
+    	const openPlayit = `playit://playerv2/video?url=${openLazyLink}#Intent;package=com.playit.videoplayer;end`;
+   	 window.location.href = openPlayit; 
 	}
 	    
 	function s_player() {
             const openLazyLink = lazyLink;
-            const openSplayer = `intent:${openLazyLink}#Intent;action=com.young.simple.player.playback_online;package=com.young.simple.player;end`;
+            const openSplayer = `intent:${openLazyLink}#Intent;package=com.ttee.leeplayer;end`;
             window.location.href = openSplayer;
         }
 	    
